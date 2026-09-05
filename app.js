@@ -40,11 +40,14 @@
     if (!img.complete) tickLoad(fake);
   }, 90);
 
-  img.onload = img.onerror = () => {
+  const finish = () => {
     clearInterval(fakeTimer);
     tickLoad(100);
     setTimeout(() => loader.classList.add("done"), 280);
   };
+  img.onload = img.onerror = finish;
+  if (img.complete) finish();
+  setTimeout(finish, 1400);
 
   const panels = [...document.querySelectorAll(".panel")];
   let target = 0;
