@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adhrit Chopdekar | Portfolio</title>
+  <meta name="description" content="Builder of study tools, browser games, and cinematic web experiences." />
+  <meta property="og:title" content="Adhrit Chopdekar | Portfolio" />
+  <meta property="og:description" content="Building products people actually use." />
+  <meta property="og:image" content="./hero.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-name">Adhrit Chopdekar</div>
+      <div class="loader-sub">Portfolio</div>
+      <div class="loader-bar"><span id="loader-fill"></span></div>
+      <div class="loader-pct">Loading experience… <span id="loader-num">0</span>%</div>
+    </div>
+  </div>
+
+  <div id="scroll-spacer" aria-hidden="true"></div>
+
+  <div id="stage">
+    <div id="hero-photo"></div>
+    <div id="vignette"></div>
+
+    <header id="nav">
+      <span class="nav-mark">AC</span>
+      <nav>
+        <button data-go="hero">Home</button>
+        <button data-go="about">About</button>
+        <button data-go="work">Work</button>
+        <button data-go="skills">Skills</button>
+        <button data-go="contact">Contact</button>
+      </nav>
+    </header>
+
+    <section class="panel" id="section-hero" data-start="0" data-end="0.16">
+      <div class="copy">
+        <h1>Adhrit<br />Chopdekar</h1>
+        <p class="typewriter"><span id="typed"></span><span class="caret">|</span></p>
+        <div class="cta-row">
+          <button class="btn-solid" data-go="work">Explore Work ↓</button>
+          <a class="btn-ghost" href="https://github.com/chopdekaradhrit2013-droid" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+        <div class="scroll-hint">
+          <span class="pulse"></span>
+          Scroll to explore
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" id="section-about" data-start="0.16" data-end="0.34">
+      <div class="copy">
+        <p class="eyebrow">About</p>
+        <h2>I build things people can open in a browser and use tonight.</h2>
+        <p class="body">
+          Study platforms for class 6–10, cinematic brand sites, and browser games —
+          shipped from an iPad and a laptop, no heavy engines. I care about the feel
+          of a product as much as whether it works.
+        </p>
+      </div>
+    </section>
+
+    <section class="panel" id="section-work" data-start="0.34" data-end="0.62">
+      <div class="copy wide">
+        <p class="eyebrow">Selected work</p>
+        <h2>Projects</h2>
+        <div class="cards" id="cards">
+          <article class="card">
+            <span class="tag">EdTech</span>
+            <h3>Padho Ek Raat Pehle</h3>
+            <p>Notes platform for classes 6–10. Subjects, filters, uploads — built to study the night before.</p>
+            <div class="card-links">
+              <a href="https://padhoekraatpehle.vercel.app" target="_blank" rel="noreferrer">Live ↗</a>
+            </div>
+          </article>
+          <article class="card">
+            <span class="tag">EdTech</span>
+            <h3>PadhaiMode</h3>
+            <p>A classy, interactive study space — notes, tests, and micro-interactions that feel alive.</p>
+          </article>
+          <article class="card">
+            <span class="tag">Game</span>
+            <h3>Apex Protocol</h3>
+            <p>Browser-first tactical FPS. Web 3D, authoritative multiplayer, built to run on phone and PC.</p>
+          </article>
+          <article class="card">
+            <span class="tag">Game</span>
+            <h3>Pixel Hunt</h3>
+            <p>Pixel-art hidden-object rooms — cottages, docks, woods. Find the relic before time runs out.</p>
+          </article>
+          <article class="card">
+            <span class="tag">Brand</span>
+            <h3>Obsidia</h3>
+            <p>Gothic fine-jewelry site. Oxidized silver, garnet, worn like a vow.</p>
+          </article>
+          <article class="card">
+            <span class="tag">Brand</span>
+            <h3>Lumen</h3>
+            <p>Quiet luxury offer gallery. Warm black, ivory, and a private-room mood.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" id="section-skills" data-start="0.62" data-end="0.80">
+      <div class="copy">
+        <p class="eyebrow">Stack</p>
+        <h2>What I ship with</h2>
+        <ul class="pills">
+          <li>React</li>
+          <li>TypeScript</li>
+          <li>Vite</li>
+          <li>Next.js</li>
+          <li>Supabase</li>
+          <li>Vercel</li>
+          <li>Three.js</li>
+          <li>PlayCanvas</li>
+          <li>Babylon.js</li>
+          <li>Canvas 2D</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="panel" id="section-contact" data-start="0.80" data-end="1">
+      <div class="copy">
+        <p class="eyebrow">Contact</p>
+        <h2>Let’s build something.</h2>
+        <p class="body">Open to collabs, internships, and strange internet ideas.</p>
+        <div class="cta-row">
+          <a class="btn-solid" href="https://github.com/chopdekaradhrit2013-droid" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn-ghost" href="mailto:hello@adhrit.dev">Email</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
