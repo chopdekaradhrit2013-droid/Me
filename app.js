@@ -25,7 +25,7 @@
   const num = document.getElementById("loader-num");
   const photo = document.getElementById("hero-photo");
   const img = new Image();
-  img.src = getComputedStyle(photo).backgroundImage.slice(5, -2) || "./hero.jpg";
+  img.src = "./hero.jpg";
 
   let loaded = 0;
   const tickLoad = (p) => {
